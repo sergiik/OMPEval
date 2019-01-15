@@ -1,0 +1,7 @@
+omp/*.o
+lib/*.a
+*.so
+pyCardRange.cpp
+test
+build
+ev
