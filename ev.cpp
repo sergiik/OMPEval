@@ -17,7 +17,7 @@ int main()
     };
     double updateInterval = 0.25; // Callback called every 0.25s.
     unsigned threads = 5; // max hardware parallelism (default)
-    eq.start(ranges, false, false, false, stdErrMargin, callback, updateInterval, threads);
+    eq.start({"55+, A2s+", "AA"});
     eq.wait();
     auto r = eq.getResults();
     cout << endl << r.equity[0] << " " << r.equity[1] << " " << r.equity[2] << " " << r.equity[3] << " " << r.equity[4] << " " << r.equity[5] << endl;
