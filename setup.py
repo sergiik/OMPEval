@@ -4,7 +4,7 @@ from Cython.Distutils import build_ext
 from Cython.Build import cythonize
 
 examples_extension = Extension(
-	name="pyCardRange",
+    name="pyCardRange",
     sources=["pyCardRange.pyx"],
     language='c++',
     libraries=["ompeval", "boost_python"],
