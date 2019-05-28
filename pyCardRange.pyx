@@ -86,7 +86,7 @@ cdef class PyEquityCalculator:
             v.push_back(CardRange(r[i]))
         print('executing c_ec.start(v)')
         #self.c_ec.start(v)
-        self.c_ec.start(v, 0)
+        self.c_ec.start(v)
 
     def wait(self):
         self.c_ec.wait()
